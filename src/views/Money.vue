@@ -6,8 +6,8 @@
 </template>
 
 <script lang="ts">
- export default {
- name: 'Money',
+  export default {
+    name: 'Money',
 };
 </script>
 
