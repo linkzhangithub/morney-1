@@ -15,3 +15,20 @@ $font-song: Georgia, "Nimbus Roman No9 L", "Songti SC", "Noto Serif CJK SC",
   PMingLiU, MingLiU, serif;
 
 $color-highlight: orange;
+
+// placeholder 选择器里包含了以下内容，但现在还不知道选择器是什么
+%clearFix {
+  &::after {
+    content: "";
+    clear: both;
+    display: block;
+  }
+}
+$color-shadow: rgba(0, 0, 0, 0.25);
+%outerShadow {
+  box-shadow: 0 0 3px $color-shadow;
+}
+%innerShadow {
+  box-shadow: inset 0 -3px 3px -3px $color-shadow,
+    inset 0 3px 3px -3px $color-shadow;
+}
