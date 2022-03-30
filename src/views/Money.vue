@@ -1,7 +1,7 @@
 <template>
     <Layout class-prefix="layout">
       <NumberPad/>
-      <Types/>
+      <Types xxx="hi"/>
       <Notes/>
       <Tags/>
     </Layout>
@@ -14,8 +14,8 @@ import Notes from '@/components/Money/Notes.vue';
 import Tags from '@/components/Money/Tags.vue';
 
   export default {
-  components: { NumberPad, Types, Notes, Tags },
     name: 'Money',
+    components: { Tags, Notes, Types, NumberPad }
 };
 </script>
 
