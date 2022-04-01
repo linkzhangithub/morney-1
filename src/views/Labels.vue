@@ -1,8 +1,8 @@
 <template>
     <Layout>
       <ol class="tags">
-        <li v-for="tag in tags" :key="tag">
-         <span>{{tag}}</span>
+        <li v-for="tag in tags" :key="tag.id">
+         <span>{{tag.name}}</span>
          <Icon name="right"/>
         </li>
       </ol>
@@ -24,15 +24,15 @@
     tags = tagListModel.data;
 
     createTag(){
-        const name = window.prompt('请输入标签名');
-        if(name) {
-          const message = tagListModel.create(name);
-          if (message === 'duplicated') {
-            window.alert('标签名重复')
-          }else if(message === 'success') {
-              window.alert('添加成功')
-          }
+      const name = window.prompt('请输入标签名');
+      if(name) {
+        const message = tagListModel.create(name);
+        if (message === 'duplicated') {
+          window.alert('标签名重复')
+        }else if(message === 'success') {
+            window.alert('添加成功')
         }
+      }
     }
   }
 </script>
