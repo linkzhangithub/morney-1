@@ -20,6 +20,8 @@
     readonly value!: string;
     @Prop(String) 
     classPrefix?: string;
+    // @Prop({type: String, default: '64px'})
+    // height!: string; 用 JS 方法在内部改高度,li 里加:style="{height:height}"
 
     liClass(item: DataSourceItem) {
         return {
