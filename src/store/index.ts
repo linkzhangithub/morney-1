@@ -45,6 +45,7 @@ const store = new Vuex.Store({
       } else {
         window.alert('删除失败');
       }
+
     },
     fetchRecords(state) {
       state.recordList = JSON.parse(window.localStorage.getItem('recordList') || '[]') as RecordItem[];
