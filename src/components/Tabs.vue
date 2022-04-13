@@ -20,8 +20,8 @@
     readonly value!: string;
     @Prop(String) 
     classPrefix?: string;
-    // @Prop({type: String, default: '64px'})
-    // height!: string;
+    @Prop({type: String, default: '64px'})
+    height!: string;
 
     liClass(item: DataSourceItem) {
         return {
@@ -31,7 +31,7 @@
     };
 
     select(item: DataSourceItem) {
-        this.$emit('update:value', item.value);
+      this.$emit('update:value', item.value);
     }
   };
 </script>
