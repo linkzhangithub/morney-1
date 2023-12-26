@@ -31,9 +31,9 @@ if (document.documentElement.clientWidth > 500) {
   img.src = './qrcode.png';
   img.style.position = 'fixed';
   img.style.left = "50%";
-  img.style.top = "25%";
+  img.style.top = "15%";
   img.style.transform = 'translate(-50%,-50%)';
   img.style.boxShadow = '0 0 10px rgba(0,0,0,0.25)';
-  img.style.width = "15%";
+  img.style.width = "10%";
   document.body.appendChild(img);
 }
